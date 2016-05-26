@@ -24,6 +24,7 @@
 		7265D66B1919978E0042DC3B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7265D66A1919978E0042DC3B /* CoreMedia.framework */; };
 		7265D66D191997930042DC3B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7265D66C191997930042DC3B /* CoreVideo.framework */; };
 		7265D66F191997970042DC3B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7265D66E191997970042DC3B /* OpenGLES.framework */; };
+		BF83932C1C181E16003A9ED8 /* H264Encode.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF83932B1C181E16003A9ED8 /* H264Encode.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		7265D66C191997930042DC3B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		7265D66E191997970042DC3B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		AC034311A4E2CCE0CCDA6C72 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BF83932A1C181E16003A9ED8 /* H264Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H264Encode.h; path = ../../transforms/Apple/H264Encode.h; sourceTree = "<group>"; };
+		BF83932B1C181E16003A9ED8 /* H264Encode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = H264Encode.mm; path = ../../transforms/Apple/H264Encode.mm; sourceTree = "<group>"; };
 		D811EF3F24704EBFB916513B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5713A4139B758B1B834C67 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +83,8 @@
 		7265D5D3191994B80042DC3B = {
 			isa = PBXGroup;
 			children = (
+				BF83932A1C181E16003A9ED8 /* H264Encode.h */,
+				BF83932B1C181E16003A9ED8 /* H264Encode.mm */,
 				7265D5E5191994B80042DC3B /* SampleBroadcaster */,
 				7265D5DE191994B80042DC3B /* Frameworks */,
 				7265D5DD191994B80042DC3B /* Products */,
@@ -181,7 +186,7 @@
 				ORGANIZATIONNAME = videocore;
 				TargetAttributes = {
 					7265D5DB191994B80042DC3B = {
-						DevelopmentTeam = 263A46GSYZ;
+						DevelopmentTeam = VR94ME5JBR;
 					};
 				};
 			};
@@ -257,6 +262,7 @@
 				7265D5F9191994B80042DC3B /* ViewController.mm in Sources */,
 				7265D5F0191994B80042DC3B /* AppDelegate.m in Sources */,
 				7265D5EC191994B80042DC3B /* main.m in Sources */,
+				BF83932C1C181E16003A9ED8 /* H264Encode.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +421,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "videocore.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "802ea4ec-e810-451f-9144-bc91bd34dd7b";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -469,7 +475,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "videocore.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "802ea4ec-e810-451f-9144-bc91bd34dd7b";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

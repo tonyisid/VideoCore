@@ -72,7 +72,7 @@
         case VCSessionStatePreviewStarted:
         case VCSessionStateEnded:
         case VCSessionStateError:
-            [_session startRtmpSessionWithURL:@"rtmp://192.168.50.19/myapp" andStreamKey:@"iosstream?abc=xxx"];
+            [_session startRtmpSessionWithURL:@"rtmp://120.26.63.153/live" andStreamKey:@"myStream"];
             break;
         default:
             [_session endRtmpSession];
